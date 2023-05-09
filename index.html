@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+<script src="https://kit.fontawesome.com/62fe724668.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="assets/css/style.css" >
+    
+    <title>Presupuesto APP</title>
+  </head>
+  <body>
+    <div class="d-block">
+      <h2 class="ms-5 mt-5">Presupuesto APP</h2>
+    </div>
+    <div class="d-flex flex-wrap">
+      <div class="d-block col-4">
+          <div class="container mx-0 ">
+            <div class="card ms-5 mt-3 border-success">
+              <div class="card-body py-2 bg-success-subtle">
+                <form class="">
+                  <div class="mb-1">
+                    <label for="txtPresupuesto" class="form-label mt-0 mb-1">
+                      <h5 class="my-0">Ingresa Tu Presupuesto</h5>
+                    </label>
+                    <input type="number" class="form-control mt-1" id="txtPresupuesto"/>
+                  </div>
+                  <button id="btnCalcular"type="button" class="btn btn-outline-success mt-1">Calcular</button>
+                </form>
+              </div>
+            </div>
+                    
+           </div>
+          </div>
+      <div class="d-block col-8">
+        <div class="container ">
+          <div class="col-md-9 mx-auto">
+            <table class="table table-borderless">           
+              <tbody class="text-center">
+                <tr class="d-flex">                
+                  <td class="col-md-4 d-flex justify-content-center"><h5>Presupuesto</h5></td>
+                  <td class="col-md-4 d-flex justify-content-center"><h5>Gasto</h5></td>
+                  <td class="col-md-4 d-flex justify-content-center"><h5>Saldo</h5></td>
+                </tr>
+                <tr class="d-flex">
+                  <td class="col-md-4 d-flex justify-content-center"><h5 id="celdaPresupuesto">0</h5><h5> $</h5></td>
+                  <td class="col-md-4 d-flex justify-content-center"><h5 id="celdaGasto">0</h5><h5> $</h5></td>
+                  <td class="col-md-4 d-flex justify-content-center"><h5 id="celdaSaldo">0</h5><h5> $</h5></td>
+                </tr> 
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div> 
+
+
+      <div class="d-block col-4">
+        <div class="container mx-0 ">
+          <div class="card ms-5 mt-3 border-danger">
+            <div class="card-body py-2 bg-danger-subtle">
+              <form class="">
+                <div class="mb-1">
+                  <label for="txtNombreGasto" class="form-label mt-0 mb-1">
+                  <h5 class="my-0">Ingresa El Nombre Del Gasto</h5>
+                  </label>
+                  <input type="text" class="form-control mt-1" id="txtNombreGasto"/>
+                </div>
+                <div class="mb-2">
+                  <label for="txtValGasto" class="form-label mt-0 mb-1">
+                  <h5 class="my-0">Ingresa La Cantidad Del Gasto</h5>
+                  </label>
+                  <input type="number" class="form-control" id="txtValGasto" />
+                </div>
+                <button id="btnGasto"type="button" class="btn btn-outline-danger">Añadir Gasto</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+         <div class="d-block col-8">    
+          <div class="container text-center">
+            <div class="col-md-9 mx-auto">
+              <table class="table table-borderless">           
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Gasto</th>
+                    <th scope="col">Valor</th>
+                    <th>Eliminar gasto</th>
+                  </tr>
+                </thead>
+                <tbody id="bodyTabla">
+
+                </tbody>
+                </table>
+            </div>            
+          </div>   
+        </div>
+
+    </div> 
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
